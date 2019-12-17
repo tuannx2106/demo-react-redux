@@ -8,3 +8,26 @@
 		color: $color-gray-light;
 	}
 }
+
+.form-inline {
+	display: flex;
+
+	.form-inline-item {
+		width: 100%;
+
+		+.form-inline-item {
+			margin-left: 16px;
+		}
+	}
+}
+
+.form-group {
+	.form-label {
+		display: block;
+		margin-bottom: 12px;
+	}
+
+	+ .form-group {
+		margin-top: 16px;
+	}
+}
