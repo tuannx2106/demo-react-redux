@@ -1,0 +1,39 @@
+.card {
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px 12px 24px;
+  border: 1px solid $color-gray-dark;
+  border-radius: 4px;
+
+  &__image {
+    margin: 0 0 24px;
+
+    img {
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+
+  &__block {
+		h3 {
+			font-size: 16px;
+			margin: 0 0 20px;
+		}
+
+    + .card__block {
+      margin-top: 24px;
+    }
+	}
+
+	&__action {
+		background-color: $color-gray-light;
+		border-radius: 4px;
+		border: 0;
+		color: $color-black;
+		font-size: 16px;
+		margin-top: 20px;
+		padding: 12px;
+		text-align: center;
+		width: 100%;
+	}
+}
