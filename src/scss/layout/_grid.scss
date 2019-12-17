@@ -3,7 +3,7 @@
 	margin-left: -16px;
 	margin-right: -16px;
 
-	[class^='.col-'] {
+	[class*='col-'] {
 		padding-left: 16px;
 		padding-right: 16px;
 	}

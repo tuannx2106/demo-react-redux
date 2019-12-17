@@ -7,7 +7,7 @@ function App() {
       <div className="container">
         <div className="card">
           <figure className="card__image">
-            <img src="/img_logo-default.png" alt="store logo" />
+            <img src="/img_logo-default.png" alt="store logo" className="w-full" />
           </figure>
           <div className="card__body">
             <div className="card__block">
@@ -54,37 +54,37 @@ function App() {
       </div>
 
       <div className="modal">
-        <div className="modal_header">
-          <h2>EDIT STORE PROFILE</h2>
+        <div className="modal__header">
+          <h3>EDIT STORE PROFILE</h3>
         </div>
-        <div className="modal___body">
+        <div className="modal__body">
           <form className="form">
             <div className="container">
               <div className="row">
                 <div className="col-5">
                   <h3>STORE IMAGE</h3>
                   <figure className="image--square">
-                    <img src="" alt="store logo"/>
+                    <img src="/img_logo-default.png" alt="store logo" className="w-full" />
                   </figure>
                   <div className="btn-group--inline">
                     <button className="btn btn--secondary">Cancel</button>
-                    <input type="file" name="store-image"></input>
+                    <input type="file" name="store-image" />
                   </div>
                 </div>
                 <div className="col-7">
                   <h3>BASIC INFO</h3>
                   <div className="form-group">
                     <label className="form-label" htmlFor="input1">Name</label>
-                    <input type="text" name="input1"/>
+                    <input type="text" name="input1" placeholder="Name" className="form-control" />
                   </div>
                   <div className="form-group">
                     <label className="form-label" htmlFor="input2">Address</label>
                     <div className="form-inline">
-                      <input type="text" name="input2"/>
-                      <select>
+                      <input type="text" name="input2" className="form-control" />
+                      <select className="form-control">
                         <option>1</option>
                       </select>
-                      <select>
+                      <select className="form-control">
                         <option>1</option>
                       </select>
                     </div>

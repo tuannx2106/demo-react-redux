@@ -1,0 +1,22 @@
+// minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css
+html,
+body,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+select {
+  cursor: pointer;
+  border: 0;
+  background-color: unset;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

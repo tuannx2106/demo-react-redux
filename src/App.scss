@@ -1,6 +1,11 @@
+@import './scss/reset';
 @import './scss/variables/colors';
 
 @import './scss/component/card';
 @import './scss/component/table';
+@import './scss/component/modal';
+@import './scss/component/form';
 
 @import './scss/layout/grid';
+
+@import './scss/utils';
