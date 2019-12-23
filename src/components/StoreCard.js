@@ -2,17 +2,18 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 const mapStateToProps = state => ({
-  currentStore: state
+  currentStore: state.currentStore
 })
 
 class StoreCard extends Component {
   render() {
-    const { id, logoUrl, name, address, phone, redInvoice } = this.props.currentStore
+    const { id, logoUrl, name, district, city, address, phone, redInvoice } = this.props.currentStore
+    const { onCLickOpenModal } = this.props
 
     return (
       <div className="card">
         <figure className="card__image">
-          <img src="/img_logo-default.png" alt="store logo" className="w-full" />
+          <img src="/img_logo-default.png" alt="store logo" className='w-full' />
         </figure>
         <div className="card__body">
           <div className="card__block">
@@ -25,7 +26,7 @@ class StoreCard extends Component {
                 </tr>
                 <tr>
                   <th>Address:</th>
-                  <td>{address}</td>
+                  <td>{`${address}, D.${district}, ${city}`}</td>
                 </tr>
                 <tr>
                   <th>Phone #:</th>
@@ -54,7 +55,7 @@ class StoreCard extends Component {
             </table>
           </div>
         </div>
-        <button className="btn btn--primary card__action">Edit Profile</button>
+        <button className="btn btn--default card__action" onClick={onCLickOpenModal}>Edit Profile</button>
       </div>
     )
   }
